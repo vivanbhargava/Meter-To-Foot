@@ -1,0 +1,21 @@
+<html>
+    <head>
+    <title> To Foot</title>
+</head>Meter
+
+<body style="text-align: center; background: lightgreen; color: blue;">
+
+    <p>
+        <label>Meter</label>
+            <input id="inputCenti" type="number" placeholder="Meter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+    </p>
+    <p>Foot: <span id="outputfoot"></span></p>
+
+    <script>
+        function lengthorDistanceConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputfoot").innerHTML = valNum * 3.281;
+        }
+    </script>
+
+</body></html>
